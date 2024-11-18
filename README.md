@@ -39,10 +39,10 @@ pip install matplotlib psutil
 
 3. **Configurações Personalizadas**:
    - Ajuste o intervalo de atualização e o número de pontos do histórico alterando as variáveis `intervalo` e `historico` no script:
-     ```python
-     intervalo = 1000  # Intervalo de atualização em ms
-     historico = 50    # Quantidade de pontos no gráfico
-     ```
+   ```python
+   intervalo = 1000  # Intervalo de atualização em ms
+   historico = 50    # Quantidade de pontos no gráfico
+   ```
 
 ## 🛠️ Estrutura do Código  
 
@@ -67,7 +67,8 @@ animacao = FuncAnimation(fig, upd_grafico, init_func=init_grafico, frames=100, i
 
 A aplicação exibe algo assim durante a execução:
 
-![Demonstração do Gráfico](https://via.placeholder.com/800x400?text=CPU+%26+Memory+Monitor)  
+![Monitor](https://github.com/user-attachments/assets/89761cf0-58f3-4199-9793-8562820ef4db)
+
 
 ## 📂 Estrutura do Projeto  
 
