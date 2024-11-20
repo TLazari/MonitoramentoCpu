@@ -1,6 +1,8 @@
 import psutil 
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+from SystemInfo import sys_info
+import time
 
 
 # Intervalo de atualização dos dados (em segundos)
@@ -39,12 +41,13 @@ def init_grafico():
 
 # Função de atualização dos dados
 def upd_grafico(frame):
-    global dados_cpu, dados_memoria 
+    global dados_cpu, dados_memoria
     
+    sys = sys_info()
     # Obter uso da CPU
-    cpu = psutil.cpu_percent(interval=0.5)
+    cpu = sys.get_cpu_use()
     # Obter uso da memória
-    memoria = psutil.virtual_memory().percent
+    memoria = sys.get_memory_use()
     
     # Adicionar os dados ao histórico
     dados_cpu.append(cpu)
