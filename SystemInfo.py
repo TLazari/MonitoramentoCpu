@@ -114,7 +114,7 @@ class sys_info:
         current_time = time.time()
 
         # Convertendo bytes para Kilobytes
-        read_kb = current_disk_io.read_bytes / 1024
+        read_kb = current_disk_io.read_bytes / 1024 
         write_kb = current_disk_io.write_bytes / 1024
         prev_read_kb = self.previous_disk_io.read_bytes / 1024
         prev_write_kb = self.previous_disk_io.write_bytes / 1024
